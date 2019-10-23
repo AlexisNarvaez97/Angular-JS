@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular JS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/lib/angular.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1> Filtros en Angular </h1>
+        <hr>
+
+        <p>
+            Filtro de texto: {{ "FerNanDo"}}
+            <br>
+            Filtro de texto: {{ "FerNanDo" | uppercase }}
+            <br>
+            Filtro de texto: {{ "FerNanDo" | lowercase }}
+        </p>
+
+        <p>
+            Filtro de moneda: {{ 1350 }}
+            <br>
+            Filtro de moneda: {{ 1350 | currency }}
+            <br>
+            Filtro de moneda: {{ 1350 | currency:'L.' }}
+        </p>
+
+        <p>
+            Filtro de número: {{ 13500000 }}
+            <br>
+            Filtro de número: {{ 1350000 | number }}
+        </p>
+
+        <p>
+            Filtro de fecha: {{ 1288323623006 }}
+            <br>
+            Filtro de fecha: {{1288323623006 | date:'medium'}}
+        </p>
+
+
+    </div>
+    
+</body>
+</html>
